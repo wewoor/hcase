@@ -33,3 +33,5 @@ HCase.add('userRegister', function() {
 	};
 	return params;
 });
+
+HCase.start();
