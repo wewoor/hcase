@@ -1,7 +1,7 @@
 #!usr/bin/env node
 
 // HCase object
-var HCase = require("./main.js");
+var HCase = require("./Main");
 
 // The command of program
 var program = require("commander");
