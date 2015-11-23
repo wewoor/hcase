@@ -34,4 +34,16 @@ HCase.add('userRegister', function() {
 	return params;
 });
 
+HCase.add('userUpdate',function(){
+	var params={
+		method:"POST",
+		url:"/user/userUpdate",
+		body:{
+			"type":"userName",
+			"content":"sys"
+		}
+	};
+	return params;
+});
+
 HCase.start();
