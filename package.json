@@ -1,0 +1,21 @@
+{
+  "name": "http-test",
+  "version": "1.0.0",
+  "description": "batch handle http request",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "http",
+    "batch"
+  ],
+  "author": "Ziv",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
