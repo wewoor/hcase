@@ -1,4 +1,6 @@
-var HCase = require('hcase');
+var HCase = require('../src/HCase');
+
+//设置默认地址
 HCase.baseUrl("http://127.0.0.1/example/");
 
 // 登录接口
@@ -46,4 +48,4 @@ HCase.add('userUpdate',function(){
 	return params;
 });
 
-HCase.start();
+HCase.start('userLogin');

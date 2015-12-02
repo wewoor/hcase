@@ -1,9 +1,15 @@
 
 var Console = require('./Console');
+var HttpRequestUtils = require('./HttpRequestUtils');
 
-function HCase() {
+var HCase=function HCase() {  
+	this.url="";
 	this.cases = {}; // Map Object
 }
+
+HCase.prototype.baseUrl = function(url){
+	this.url=url;
+};
 
 HCase.prototype.case = function(name) {
 	var options = this.cases[name];
@@ -32,7 +38,9 @@ HCase.prototype.add = function(name, func) {
 };
 
 HCase.prototype.start = function(name) {
-
+	var options=this.cases[name];
+	console.log(options);
+	HttpRequestUtils.request(options);
 };
 
-module.exports.HCase = new HCase();
+module.exports = new HCase();

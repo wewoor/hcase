@@ -1,7 +1,7 @@
 #!usr/bin/env node
 
 // HCase object
-var HCase = require("./Main");
+var HCase = require("./HCase");
 
 // The command of program
 var program = require("commander");
@@ -13,7 +13,7 @@ program.version('0.0.1')
 .option('-l, --list', "show all test cases")
 .option('-p, --page', 'show the results of test cases in browser');
 
-// Help
+// Help 通过监听---help来监听额外的帮助信息
 program.on('--help', function() {
 	console.log(' Examples:');
 	console.log('');
