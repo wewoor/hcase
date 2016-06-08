@@ -1,6 +1,6 @@
 {
-  "name": "http-test",
-  "version": "1.0.0",
+  "name": "hcase",
+  "version": "0.0.1",
   "description": "batch handle http request",
   "main": "index.js",
   "directories": {
